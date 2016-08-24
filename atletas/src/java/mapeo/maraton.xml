@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="modelo.maraton" optimistic-lock="version" polymorphism="implicit" select-before-update="false">
+    <id column="idmaraton" name="idmaraton">
+      <generator class="identity"/>
+    </id>
+    <set cascade="none" inverse="true" name="carreras">
+      <key>
+        <column name="Maraton_idmaraton"/>
+      </key>
+      <one-to-many class="modelo.carrera"/>
+    </set>
+    <property column="fecha" name="fecha" type="date"/>
+    <property column="organizador" name="organizador" type="string"/>
+    <property column="estado" name="estado" type="string"/>
+  </class>
+</hibernate-mapping>

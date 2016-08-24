@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>atletas</servlet-name>
+        <servlet-class>controlador.atletas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>maratones</servlet-name>
+        <servlet-class>controlador.maratones</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>carreras</servlet-name>
+        <servlet-class>controlador.carreras</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ATLETAS</servlet-name>
+        <servlet-class>controlador.ATLETAS</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MARATON</servlet-name>
+        <servlet-class>controlador.MARATON</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MARATONES</servlet-name>
+        <servlet-class>controlador.MARATONES</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CARRERAS</servlet-name>
+        <servlet-class>controlador.CARRERAS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>atletas</servlet-name>
+        <url-pattern>/atletas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>maratones</servlet-name>
+        <url-pattern>/maratones</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>carreras</servlet-name>
+        <url-pattern>/carreras</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ATLETAS</servlet-name>
+        <url-pattern>/ATLETAS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MARATON</servlet-name>
+        <url-pattern>/MARATON</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MARATONES</servlet-name>
+        <url-pattern>/MARATONES</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CARRERAS</servlet-name>
+        <url-pattern>/CARRERAS</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

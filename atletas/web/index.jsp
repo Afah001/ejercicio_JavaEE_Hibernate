@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <a href="registroAtletas.jsp">ATLETAS</a>
+        <a href="registroMaratones.jsp">MARATONES</a>
+        <a href="CARRERAS?accion=consultarATLETAS_MARATONES">CARRERAS</a>
     </body>
 </html>
